@@ -8,12 +8,14 @@ no Traditional, no per-instrument variant logic.
 Reference app (same stack, ported from): `~/Desktop/Projects/csc-career-compass`.
 
 ## Tools (instruments)
-| ID | Workshop | Status |
-|----|----------|--------|
-| **W15** | Career Growth — "Your Wins" | ✅ built (Phase 1) |
-| W10 | Workplace Culture Fit | planned (config-only) |
-| W04 | Transferable Skills Finder | planned (config-only) |
-| W12 | Hidden Network | planned (config-only) |
+| ID | Workshop | Reveals → outputs |
+|----|----------|-------------------|
+| **W15** | Career Growth — "Your Wins" | wins repeater + readiness → wins list, readiness meter, 3-step raise script |
+| **W04** | Interview Skills — "Transferable Skills Finder" | jobs repeater + skills chips → inventory grouped by dimension + 2 STAR seeds |
+| **W10** | Workplace Culture Fit | 6 norm ratings → strengths/watch-outs split-map (each watch-out + a tip) |
+| **W12** | Networking — "Hidden Network" | contacts by category + readiness → asset-map + meter + outreach message |
+
+All four are live. Deployed at https://csc-diagnostics.pages.dev (CF Pages, direct upload, production branch `master`). Repo: https://github.com/Joshli316/csc-diagnostics
 
 ## Tech Stack
 - Vanilla HTML + TypeScript SPA. No framework. Vite build.
@@ -60,5 +62,6 @@ folder + one line in `registry.ts`.
 - Every page carries the footer disclaimer: "starting point, not professional counseling — talk to your CSC specialist."
 - **No backup files** when editing. **No auto-deploy** — wait for explicit "deploy".
 
-## Pre-deploy TODO
-- `src/instruments/w15/config.ts` `WORKSHOP_URL` is a placeholder (workshops hub). Point it at the live Career Growth workshop deep link before shipping.
+## Follow-ups
+- **`WORKSHOP_URL` placeholders** — all four `instruments/<id>/config.ts` cta links point at the workshops hub (`https://csc-workshops.pages.dev/`). Point each at its live workshop deep link when known.
+- **Chinese copy is draft** (`_meta.draft: true` in `data/locales/zh-Hans.json` and each `copy.zh-Hans.json`) — needs native-speaker review before client use. The draft banner shows in 中文 until then.
