@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "lang": "en",
+    "draft": false,
+    "name": "English"
+  },
+  "lang": {
+    "en": "EN",
+    "zh": "中文",
+    "aria_label": "Language"
+  },
+  "header": {
+    "brand": "CSC Self-Checks"
+  },
+  "page_title": {
+    "hub": "CSC Workshop Self-Checks",
+    "tool": "Self-check · CSC",
+    "results": "Your results · CSC"
+  },
+  "hub": {
+    "h1": "Workshop Self-Checks",
+    "subhead": "Short, private self-checks to get the most out of your CSC workshop. Free. No account.",
+    "footer_note": "These tools stay on your phone. Nothing is sent to a server.",
+    "draft_banner": "The Chinese version is still being reviewed. The English version is ready.",
+    "card_start": "Start →",
+    "card_view": "View my results →",
+    "card_resume": "Resume — Step {current} of {total}"
+  },
+  "common": {
+    "back_to_hub": "← All self-checks",
+    "free": "Free, no account — about 5 minutes",
+    "private": "Stays on your phone — nothing sent to a server",
+    "start": "Start →",
+    "resume_with_step": "Resume — Step {current} of {total}"
+  },
+  "survey": {
+    "all_tools": "← All self-checks",
+    "back": "← Back",
+    "next": "Next →",
+    "finish": "See my results →",
+    "step_counter": "Step {current} of {total}",
+    "or_separator": "— or —",
+    "selected_count": "{n} of {max} selected",
+    "selected_count_simple": "{n} selected",
+    "tile_selected_rank": "{label}, selected number {rank}",
+    "pick_one_each": "Please answer every item to continue.",
+    "pick_one": "Please pick one to continue.",
+    "pick_exact_n": "Please pick exactly {n} to continue.",
+    "need_min_rows": "Please add at least {min} to continue."
+  },
+  "results": {
+    "complete_badge": "Done",
+    "take_title": "Take your results with you",
+    "pdf_button": "Download PDF",
+    "pdf_helper": "Save or print this. Take it to your CSC appointment, or share it with family.",
+    "specialist_note": "Bring this to your CSC specialist. They can help you plan your next steps.",
+    "restart_note": "Want to try again?",
+    "restart_link": "Start over →"
+  },
+  "footer": {
+    "disclaimer": "This is a starting point, not professional counseling. For personalized guidance, talk to your CSC specialist."
+  }
+}

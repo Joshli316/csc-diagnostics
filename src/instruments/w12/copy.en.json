@@ -1,0 +1,79 @@
+{
+  "_meta": { "lang": "en", "instrument": "w12", "draft": false },
+  "intro": {
+    "workshop": "Networking workshop",
+    "title": "Your Hidden Network",
+    "subhead": "You know more people than you think. Let's make your network visible.",
+    "duration": "About 5 minutes",
+    "outcome": "You will see your network as a map, plus a ready-to-send message to reconnect."
+  },
+  "page": {
+    "network_title": "People you know",
+    "network_why": "List anyone who comes to mind. No name is too small — a quick \"who they are\" is fine.",
+    "readiness_title": "Reaching out",
+    "readiness_why": "Be honest about how this feels. There are no wrong answers."
+  },
+  "categories": {
+    "family_title": "Family & people close to you",
+    "family_why": "Relatives, in-laws, close family friends.",
+    "coworkers_title": "Past coworkers, bosses, or clients",
+    "coworkers_why": "Anyone from a job, here or overseas.",
+    "friends_title": "Friends & neighbors",
+    "friends_why": "People you see around or keep in touch with.",
+    "community_title": "Classmates, teachers, church or community",
+    "community_why": "Anyone from school, classes, or groups you belong to."
+  },
+  "contact": {
+    "row_label": "Person {n}",
+    "add": "+ Add another person",
+    "remove": "Remove",
+    "name_label": "Their name or who they are",
+    "name_ph": "e.g., Auntie Lin, or my old manager",
+    "how_label": "How might they help? (optional)",
+    "how_ph": "e.g., works in healthcare, knows many people"
+  },
+  "readiness": {
+    "scale_yes": "Yes",
+    "scale_somewhat": "Somewhat",
+    "scale_not": "Not yet",
+    "q1": "I feel okay asking people I know for help.",
+    "q2": "I know what I would ask for — advice, a referral, an introduction.",
+    "q3": "I can send a short message to reconnect with someone.",
+    "q4": "I believe the people I know would be glad to help me."
+  },
+  "readiness_levels": {
+    "building": {
+      "name": "Warming up",
+      "desc": "Reaching out feels big right now — that's normal. Start with one person you trust most."
+    },
+    "getting_ready": {
+      "name": "Getting comfortable",
+      "desc": "You're close. Practice your message on someone easy first, then send a few more."
+    },
+    "ready": {
+      "name": "Ready to reach out",
+      "desc": "You're ready. Use the message below to reconnect with someone today."
+    }
+  },
+  "outreach": {
+    "name_fallback": "[their name]",
+    "line1": "Hi {name}, it's been a while — I hope you're doing well!",
+    "line2": "I'm exploring some new work opportunities, and I'd really value your advice.",
+    "line3": "Could we chat for 15 minutes sometime this week? Thank you so much!"
+  },
+  "results": {
+    "title": "Your Network",
+    "narrative_h": "Here's what we heard about you",
+    "narrative_body": "Most people know far more helpful people than they realize. Here is your network — and a simple way to reach out.",
+    "map_h": "People you know",
+    "map_lead": "Your network, grouped. Each person is a door that might open.",
+    "map_empty": "Add a few people above — start with family and friends.",
+    "meter_h": "How ready you feel to reach out",
+    "meter_lead": "Asking for help is a skill, not a weakness.",
+    "script_h": "Your first message",
+    "script_lead": "A friendly way to reconnect. Change the words to sound like you.",
+    "cta_h": "Bring this to your workshop",
+    "cta_body": "Take your network map and message to the Networking workshop to practice reaching out.",
+    "cta_link": "Go to the Networking workshop →"
+  }
+}

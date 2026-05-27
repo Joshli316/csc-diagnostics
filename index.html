@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f4c81" />
+    <meta name="description" content="CSC Workshop Self-Checks — short, private self-assessments to get the most out of your Chinatown Service Center workshop. Free, no account." />
+    <title>CSC Workshop Self-Checks</title>
+    <meta property="og:title" content="CSC Workshop Self-Checks" />
+    <meta property="og:site_name" content="Chinatown Service Center" />
+    <meta property="og:description" content="Short, private self-checks to get the most out of your CSC workshop. Free, no account." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230f4c81'/%3E%3Cpath d='M9 22V10h2.5l4.5 7 4.5-7H23v12h-2.5v-7.5L16 21l-4.5-6.5V22z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      // Set html[lang] before the module bundle parses, so screen readers
+      // pick the right voice engine on the first frame.
+      (function () {
+        try {
+          var v = localStorage.getItem("cscDiag.lang");
+          if (v === "en" || v === "zh-Hans") {
+            document.documentElement.lang = v;
+          }
+        } catch (e) { /* localStorage blocked */ }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="sr-announce" role="status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+    <header id="site-header" class="site-header" role="banner"></header>
+    <main id="main" role="main"></main>
+    <footer id="site-footer" class="site-footer" role="contentinfo"></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

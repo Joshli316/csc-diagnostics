@@ -1,0 +1,44 @@
+[
+  {
+    "id": "n_speak",
+    "en": "Speaking up and sharing your ideas in meetings",
+    "zh": "在会议上开口、分享自己的想法",
+    "tip_en": "Write down one idea before the meeting and say it early.",
+    "tip_zh": "开会前先写下一个想法，早点说出来。"
+  },
+  {
+    "id": "n_sell",
+    "en": "Talking about your own achievements",
+    "zh": "谈论自己的成就",
+    "tip_en": "Keep a short list of your wins so you can mention them naturally.",
+    "tip_zh": "列一份简短的成果清单，这样你可以自然地提起。"
+  },
+  {
+    "id": "n_smalltalk",
+    "en": "Making small talk with coworkers",
+    "zh": "和同事闲聊",
+    "tip_en": "Start simple — ask about their weekend or the weather.",
+    "tip_zh": "从简单的开始——问问他们的周末或天气。"
+  },
+  {
+    "id": "n_questions",
+    "en": "Asking questions when something is unclear",
+    "zh": "不清楚时主动提问",
+    "tip_en": "Try: \"Can you help me understand this?\" Asking shows you care.",
+    "tip_zh": "试试：“可以帮我理解一下这个吗？” 提问说明你很用心。"
+  },
+  {
+    "id": "n_disagree",
+    "en": "Disagreeing or saying no politely",
+    "zh": "礼貌地表达不同意见或拒绝",
+    "tip_en": "You can say: \"I see it a little differently — can I share?\"",
+    "tip_zh": "你可以说：“我的看法有点不同——我可以说说吗？”"
+  },
+  {
+    "id": "n_network",
+    "en": "Building professional relationships",
+    "zh": "建立职业人脉关系",
+    "tip_en": "Reach out to one person a week. A short hello is enough.",
+    "tip_zh": "每周联系一个人。一句简单的问候就够了。"
+  }
+]

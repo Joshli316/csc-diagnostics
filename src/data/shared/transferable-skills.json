@@ -1,0 +1,21 @@
+[
+  { "id": "s_listening", "dimension": "people", "en": "Listening carefully", "zh": "仔细倾听" },
+  { "id": "s_helping", "dimension": "people", "en": "Helping customers or clients", "zh": "帮助顾客或客户" },
+  { "id": "s_teamwork", "dimension": "people", "en": "Working as a team", "zh": "团队合作" },
+  { "id": "s_languages", "dimension": "people", "en": "Speaking more than one language", "zh": "会说不止一种语言" },
+
+  { "id": "s_troubleshoot", "dimension": "solving", "en": "Fixing problems when they come up", "zh": "遇到问题时把它解决" },
+  { "id": "s_learning", "dimension": "solving", "en": "Learning new tools quickly", "zh": "快速学会新工具" },
+  { "id": "s_attention", "dimension": "solving", "en": "Catching mistakes — attention to detail", "zh": "发现错误——注重细节" },
+  { "id": "s_decisions", "dimension": "solving", "en": "Making good decisions under pressure", "zh": "在压力下做出好的决定" },
+
+  { "id": "s_reliable", "dimension": "doing", "en": "Showing up on time, every time", "zh": "每次都准时到岗" },
+  { "id": "s_handson", "dimension": "doing", "en": "Working with your hands and tools", "zh": "动手操作、使用工具" },
+  { "id": "s_fast", "dimension": "doing", "en": "Working quickly without losing quality", "zh": "又快又不出错地工作" },
+  { "id": "s_organized", "dimension": "doing", "en": "Keeping things organized", "zh": "把事情安排得井井有条" },
+
+  { "id": "s_training", "dimension": "leading", "en": "Training or teaching others", "zh": "培训或教导别人" },
+  { "id": "s_planning", "dimension": "leading", "en": "Planning and scheduling", "zh": "计划和安排时间" },
+  { "id": "s_money", "dimension": "leading", "en": "Handling money or records", "zh": "管理钱款或记录" },
+  { "id": "s_calm", "dimension": "leading", "en": "Staying calm with upset people", "zh": "面对生气的人保持冷静" }
+]

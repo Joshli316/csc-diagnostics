@@ -1,0 +1,54 @@
+{
+  "_meta": { "lang": "en", "instrument": "w04", "draft": false },
+  "intro": {
+    "workshop": "Interview Skills workshop",
+    "title": "Transferable Skills Finder",
+    "subhead": "Find the skills you already have — from any job, anywhere — and turn them into interview stories.",
+    "duration": "About 6 minutes",
+    "outcome": "You will get a skills inventory and 2 ready-to-build interview stories."
+  },
+  "page": {
+    "jobs_title": "The work you've done",
+    "jobs_why": "List any jobs or roles — including work overseas, a family business, volunteering, or caring for family. They all count.",
+    "skills_title": "Which of these have you done?",
+    "skills_why": "Pick everything that fits. Think across all the work you listed."
+  },
+  "jobs": {
+    "row_label": "Job {n}",
+    "add": "+ Add another job",
+    "remove": "Remove",
+    "title_label": "Job or role",
+    "title_ph": "e.g., Restaurant server, or family store helper",
+    "did_label": "What did you do there?",
+    "did_ph": "e.g., Took orders, handled cash, trained new staff"
+  },
+  "dimensions": {
+    "people": "Working with people",
+    "solving": "Solving problems",
+    "doing": "Getting things done",
+    "leading": "Leading & organizing"
+  },
+  "star": {
+    "situation": "At \"{job}\": think of one time something needed to get done.",
+    "task": "What needed to happen? Say it in one sentence.",
+    "action": "What did you do? You used this skill: {skill}.",
+    "action_no_skill": "What did you do? Name the skill you used.",
+    "result": "What was the result? Add a number if you can — time saved, people helped, money made."
+  },
+  "results": {
+    "title": "Your Skills",
+    "narrative_h": "Here's what we heard about you",
+    "narrative_body": "Every job teaches skills you carry to the next one — even work that didn't feel \"official.\" Here is what you already bring.",
+    "jobs_h": "The work you've done",
+    "jobs_lead": "Every one of these built real skills.",
+    "skills_h": "Your transferable skills",
+    "skills_lead": "Skills you can use in any job — and talk about in an interview.",
+    "skills_empty": "Go back and pick a few skills — you have more than you think.",
+    "star_h": "Interview story 1",
+    "star_lead": "Fill in the blanks out loud. This is the STAR method interviewers love: Situation, Task, Action, Result.",
+    "star2_h": "Interview story 2",
+    "cta_h": "Bring this to your workshop",
+    "cta_body": "Take your skills and stories to the Interview Skills workshop to practice telling them.",
+    "cta_link": "Go to the Interview Skills workshop →"
+  }
+}

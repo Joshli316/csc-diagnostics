@@ -1,0 +1,33 @@
+{
+  "_meta": { "lang": "en", "instrument": "w10", "draft": false },
+  "intro": {
+    "workshop": "Workplace Culture workshop",
+    "title": "Workplace Culture Fit",
+    "subhead": "See which US workplace habits already fit you — and which are worth practicing.",
+    "duration": "About 4 minutes",
+    "outcome": "You will get a map of your workplace strengths and the habits to practice, each with a tip."
+  },
+  "page": {
+    "culture_title": "US workplace habits",
+    "culture_why": "For each one, how does it feel to you right now? Be honest — there are no wrong answers."
+  },
+  "culture": {
+    "scale_natural": "Comes naturally",
+    "scale_working": "Working on it",
+    "scale_hard": "Feels hard"
+  },
+  "results": {
+    "title": "Your Culture Fit",
+    "narrative_h": "Here's what we heard about you",
+    "narrative_body": "Some US workplace habits already fit how you like to work. Others may take practice — that is completely normal, and every one can be learned.",
+    "map_h": "Your culture map",
+    "map_lead": "What already fits you, and what is worth practicing.",
+    "strengths_h": "Already fits you",
+    "watchouts_h": "Worth practicing",
+    "strengths_empty": "You are still finding your footing — that is okay. Pick one habit to start with.",
+    "watchouts_empty": "Nothing felt hard — wonderful. Keep doing what works for you.",
+    "cta_h": "Bring this to your workshop",
+    "cta_body": "Take your culture map to the Workplace Culture workshop. Your CSC specialist can help you practice the hard ones.",
+    "cta_link": "Go to the Workplace Culture workshop →"
+  }
+}

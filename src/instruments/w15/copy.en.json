@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "lang": "en",
+    "instrument": "w15",
+    "draft": false
+  },
+  "intro": {
+    "workshop": "Career Growth workshop",
+    "title": "Your Wins",
+    "subhead": "Turn what you have done into proof — and see how ready you are to ask for a raise.",
+    "duration": "About 5 minutes",
+    "outcome": "You will get a list of your wins, a readiness meter, and a ready-to-use script for asking for a raise."
+  },
+  "page": {
+    "wins_title": "Your wins",
+    "wins_why": "Think about the last year or two. What did you do that made things better? List one win per box — a number makes it stronger.",
+    "readiness_title": "Asking for more",
+    "readiness_why": "Be honest about where you are. There are no wrong answers."
+  },
+  "wins": {
+    "row_label": "Win {n}",
+    "add": "+ Add another win",
+    "remove": "Remove",
+    "action_label": "What did you do?",
+    "action_ph": "e.g., Trained the new team members",
+    "result_label": "What changed? Use a number if you can.",
+    "result_ph": "e.g., Cut training time by 30%, or saved 5 hours a week"
+  },
+  "readiness": {
+    "scale_yes": "I do this",
+    "scale_somewhat": "Somewhat",
+    "scale_not": "Not yet",
+    "q1": "I can name specific results I have delivered at work.",
+    "q2": "I know what people in my role usually get paid.",
+    "q3": "I feel ready to start the conversation with my manager.",
+    "q4": "I can explain why I have earned more, with examples."
+  },
+  "readiness_levels": {
+    "building": {
+      "name": "Building your case",
+      "desc": "You are gathering your proof. Keep collecting wins and pay information — every one makes your case stronger."
+    },
+    "getting_ready": {
+      "name": "Getting ready",
+      "desc": "You have a real start. Practice saying your wins out loud, and look up typical pay for your role."
+    },
+    "ready": {
+      "name": "Ready to ask",
+      "desc": "You know your wins and your worth. Use the script below to start the conversation."
+    }
+  },
+  "script": {
+    "open": "I would like to set up a short time to talk about my work and my pay.",
+    "evidence": "For example: {action} — {result}.",
+    "evidence_empty": "For example, let me walk you through the results I delivered this year.",
+    "ask": "Based on results like this, I would like to talk about a raise or a promotion."
+  },
+  "results": {
+    "title": "Your Wins",
+    "narrative_h": "Here's what we heard about you",
+    "narrative_body": "These are real things you did — with numbers, not just adjectives. That is the proof you bring to any conversation about a raise or a new role.",
+    "wins_h": "Your wins",
+    "wins_lead": "Real things you did. Say these out loud until they feel natural.",
+    "wins_empty": "You did not list any wins yet. Go back and add at least one — even a small one counts.",
+    "meter_h": "How ready you are to ask",
+    "meter_lead": "Asking for more is a skill you can build.",
+    "script_h": "Your 3-step raise script",
+    "script_lead": "A simple way to start the conversation. Change the words to sound like you.",
+    "cta_h": "Bring this to your workshop",
+    "cta_body": "Take these wins and this script to the Career Growth workshop. Your CSC specialist can help you practice.",
+    "cta_link": "Go to the Career Growth workshop →"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_meta": { "lang": "zh-Hans", "instrument": "w10", "draft": true },
+  "intro": {
+    "workshop": "职场文化工作坊",
+    "title": "职场文化契合度",
+    "subhead": "看看哪些美国职场习惯已经适合你，哪些值得练习。",
+    "duration": "约 4 分钟",
+    "outcome": "你会得到一张职场优势地图，以及需要练习的习惯，每一项都附带一个小贴士。"
+  },
+  "page": {
+    "culture_title": "美国职场习惯",
+    "culture_why": "对每一项，你现在的感受如何？诚实回答——没有错误答案。"
+  },
+  "culture": {
+    "scale_natural": "很自然",
+    "scale_working": "正在练习",
+    "scale_hard": "觉得难"
+  },
+  "results": {
+    "title": "你的文化契合度",
+    "narrative_h": "我们听到的你是这样的",
+    "narrative_body": "有些美国职场习惯已经契合你的工作方式。另一些可能需要练习——这完全正常，而且每一项都可以学会。",
+    "map_h": "你的文化地图",
+    "map_lead": "哪些已经适合你，哪些值得练习。",
+    "strengths_h": "已经适合你",
+    "watchouts_h": "值得练习",
+    "strengths_empty": "你还在找感觉——没关系。挑一个习惯开始吧。",
+    "watchouts_empty": "没有觉得难的——太好了。继续保持适合你的方式。",
+    "cta_h": "把这些带到工作坊",
+    "cta_body": "把你的文化地图带到职场文化工作坊。你的 CSC 专员可以帮你练习那些觉得难的部分。",
+    "cta_link": "前往职场文化工作坊 →"
+  }
+}
