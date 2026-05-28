@@ -1,4 +1,6 @@
 name = "csc-diagnostics"
 pages_build_output_dir = "dist"
 compatibility_date = "2025-01-01"
-production_branch = "master"
+# Production branch is set in the Cloudflare dashboard (master).
+# `production_branch` is not a valid wrangler.toml field for Pages projects —
+# pass `--branch master` to `wrangler pages deploy` instead.
