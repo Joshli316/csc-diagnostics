@@ -87,14 +87,28 @@ function optionLabel(o: Labeled): string {
   return o.labelKey ? ct(o.labelKey) : pickLang(o.label);
 }
 
+function qIntroId(q: Question): string {
+  return `qi-${q.id}`;
+}
+
 function renderQuestionIntro(q: Question): string {
   if (!q.introTitleKey) return "";
   return `
     <div class="q-intro">
-      <h3>${escapeHtml(ct(q.introTitleKey))}</h3>
+      <h3 id="${escapeHtml(qIntroId(q))}">${escapeHtml(ct(q.introTitleKey))}</h3>
       ${q.introWhyKey ? `<p>${escapeHtml(ct(q.introWhyKey))}</p>` : ""}
     </div>
   `;
+}
+
+/**
+ * Group label for chip/tile/choice containers. Screen readers announce
+ * `role="group"` with no name as just "group" — link the group to the q-intro
+ * h3 when one exists; otherwise drop role="group" so AT users hear the buttons
+ * unannounced rather than a nameless group.
+ */
+function groupAttrs(q: Question): string {
+  return q.introTitleKey ? ` role="group" aria-labelledby="${escapeHtml(qIntroId(q))}"` : "";
 }
 
 function renderMatrixRating(q: Extract<Question, { kind: "matrix-rating" }>): string {
@@ -143,7 +157,7 @@ function renderChips(q: Extract<Question, { kind: "chips" }>): string {
     : formatT("survey.selected_count", { n: picks.length, max: q.cap });
   return `
     ${renderQuestionIntro(q)}
-    <div class="tag-cloud" role="group">${chips}</div>
+    <div class="tag-cloud"${groupAttrs(q)}>${chips}</div>
     <p class="step-counter" aria-live="polite">${escapeHtml(counter)}</p>
   `;
 }
@@ -167,7 +181,7 @@ function renderTiles(q: Extract<Question, { kind: "tiles" }>): string {
   const counter = formatT("survey.selected_count", { n: picks.length, max: q.pick });
   return `
     ${renderQuestionIntro(q)}
-    <div class="tile-grid" role="group">${tiles}</div>
+    <div class="tile-grid"${groupAttrs(q)}>${tiles}</div>
     <p class="step-counter" aria-live="polite">${escapeHtml(counter)}</p>
   `;
 }
@@ -184,14 +198,14 @@ function renderSingleTile(q: Extract<Question, { kind: "single-tile" }>): string
       </button>
     `;
   }).join("");
-  return `${renderQuestionIntro(q)}<div class="tile-grid" role="group">${tiles}</div>`;
+  return `${renderQuestionIntro(q)}<div class="tile-grid"${groupAttrs(q)}>${tiles}</div>`;
 }
 
 function renderChoice(q: Extract<Question, { kind: "choice" }>): string {
   const chosen = state.singles[q.id];
   return `
     ${renderQuestionIntro(q)}
-    <div class="tot-wrap" role="group">
+    <div class="tot-wrap"${groupAttrs(q)}>
       <button type="button" class="tot-card" data-action="choice" data-qid="${escapeHtml(q.id)}" data-side="a"
         aria-pressed="${chosen === "a"}">${escapeHtml(ct(q.aKey))}</button>
       <span class="tot-or" aria-hidden="true">${escapeHtml(t("survey.or_separator"))}</span>

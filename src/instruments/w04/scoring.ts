@@ -5,6 +5,7 @@
  */
 import type { CopyT, Diagnosis, InstrumentState, ListItem } from "../../engine/instrument";
 import { pickLang } from "../../engine/i18n";
+import { interpolate } from "../../engine/util";
 import skills from "../../data/shared/transferable-skills.json";
 
 export const JOBS_QID = "jobs";
@@ -19,10 +20,6 @@ export interface StarTemplates {
   action: string;
   actionNoSkill: string;
   result: string;
-}
-
-function interpolate(s: string, vars: Record<string, string>): string {
-  return s.replace(/\{(\w+)\}/g, (_, name: string) => (name in vars ? vars[name] : `{${name}}`));
 }
 
 export function collectJobs(state: InstrumentState): Job[] {

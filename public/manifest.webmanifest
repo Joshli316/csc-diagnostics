@@ -1,0 +1,20 @@
+{
+  "name": "CSC Workshop Self-Checks",
+  "short_name": "CSC Self-Checks",
+  "description": "Short, private self-checks to get the most out of your CSC workshop. Free, no account.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf7f2",
+  "theme_color": "#0f4c81",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

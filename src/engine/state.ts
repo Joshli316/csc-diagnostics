@@ -24,12 +24,31 @@ export function emptyState(lang: Lang): InstrumentState {
   };
 }
 
+function isPlainObject(v: unknown): v is Record<string, unknown> {
+  return typeof v === "object" && v !== null && !Array.isArray(v);
+}
+
+/** Shape-check a parsed state blob. Guards downstream code from crashing on
+ *  tampered or corrupted localStorage entries (no PII risk — pure robustness). */
+function isValidState(v: unknown): v is InstrumentState {
+  if (!isPlainObject(v)) return false;
+  return (
+    v.version === STATE_VERSION &&
+    typeof v.pageIndex === "number" &&
+    typeof v.lang === "string" &&
+    isPlainObject(v.ratings) &&
+    isPlainObject(v.picks) &&
+    isPlainObject(v.singles) &&
+    isPlainObject(v.repeaters)
+  );
+}
+
 export function loadState(instrumentId: string): InstrumentState | null {
   try {
     const raw = localStorage.getItem(stateKey(instrumentId));
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as InstrumentState;
-    if (parsed.version !== STATE_VERSION) {
+    const parsed: unknown = JSON.parse(raw);
+    if (!isValidState(parsed)) {
       clearState(instrumentId);
       return null;
     }

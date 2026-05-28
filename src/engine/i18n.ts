@@ -1,5 +1,6 @@
 import en from "../data/locales/en.json";
 import zh from "../data/locales/zh-Hans.json";
+import { interpolate } from "./util";
 
 export type Lang = "en" | "zh-Hans";
 
@@ -85,12 +86,6 @@ function resolve(dict: Record<string, unknown>, key: string): unknown {
     }
   }
   return cur;
-}
-
-function interpolate(s: string, vars: Record<string, string | number>): string {
-  return s.replace(/\{(\w+)\}/g, (_, name: string) =>
-    name in vars ? String(vars[name]) : `{${name}}`
-  );
 }
 
 /** Look up a dotted key in the global chrome locale, English fallback. */

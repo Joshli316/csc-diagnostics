@@ -5,6 +5,7 @@
  */
 import type { CopyT, Diagnosis, InstrumentState, ListItem } from "../../engine/instrument";
 import { readinessBucket, sumRatings } from "../../engine/scoring";
+import { interpolate } from "../../engine/util";
 import { CATEGORIES } from "./categories";
 
 export const READINESS_ITEM_IDS = ["r1", "r2", "r3", "r4"];
@@ -13,10 +14,6 @@ export const READINESS_MAX = 8;
 export interface Contact { name: string; how: string; }
 
 export interface OutreachTemplates { line1: string; line2: string; line3: string; }
-
-function interpolate(s: string, vars: Record<string, string>): string {
-  return s.replace(/\{(\w+)\}/g, (_, name: string) => (name in vars ? vars[name] : `{${name}}`));
-}
 
 /** Filled contacts in a category's repeater. */
 export function contactsIn(state: InstrumentState, categoryId: string): Contact[] {

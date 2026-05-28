@@ -10,3 +10,10 @@ export function escapeHtml(s: string): string {
     }
   });
 }
+
+/** Replace `{name}` placeholders with vars[name]; leave unknown placeholders verbatim. */
+export function interpolate(s: string, vars: Record<string, string | number>): string {
+  return s.replace(/\{(\w+)\}/g, (_, name: string) =>
+    name in vars ? String(vars[name]) : `{${name}}`,
+  );
+}

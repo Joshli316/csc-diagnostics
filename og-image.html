@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OG image — CSC Workshop Self-Checks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700&family=Inter:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+<style>
+  :root {
+    --primary: #0f4c81;
+    --primary-hover: #0a3a66;
+    --primary-tint: #dde7f0;
+    --accent: #c2410c;
+    --accent-tint: #fde6da;
+    --accent-text: #7a2906;
+    --surface: #faf7f2;
+    --border: #e5dfd3;
+    --text: #0b1726;
+    --text-muted: #3d4852;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: "Inter", -apple-system, sans-serif;
+    background: var(--surface);
+    color: var(--text);
+    padding: 56px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 10px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-hover) 60%, var(--accent) 100%);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .icon-square {
+    width: 56px; height: 56px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(15, 76, 129, 0.28);
+  }
+  .icon-square svg { width: 32px; height: 32px; }
+  .org-name {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--accent-tint);
+    color: var(--accent-text);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 5px 13px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .title-en {
+    font-family: "Fraunces", ui-serif, Georgia, serif;
+    font-size: 84px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    margin-bottom: 10px;
+  }
+  .title-zh {
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--text-muted);
+    line-height: 1.2;
+  }
+  .accent-rule {
+    width: 72px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 26px 0 22px;
+  }
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+    border-radius: 6px;
+    padding: 6px 14px;
+  }
+  .pill .label { color: var(--text); }
+  .pill .label-zh {
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .url {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: ui-monospace, "SF Mono", monospace;
+  }
+  .meta {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: right;
+  }
+  .corner-mark {
+    position: absolute;
+    bottom: 56px; right: 64px;
+    width: 76px; height: 76px;
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-text);
+    font-size: 30px;
+    font-weight: 800;
+    background: var(--surface);
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="header">
+      <div class="icon-square">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 11l3 3L22 4"></path>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+        </svg>
+      </div>
+      <div class="org-name">Chinatown Service Center · 华埠服务中心</div>
+    </div>
+    <div style="margin-top: 28px;">
+      <div class="tag">Self-Checks · 4 Tools</div>
+      <div class="title-en">Workshop Self-Checks</div>
+      <div class="title-zh">工作坊自我评估 · 短而私密的自检工具</div>
+      <div class="accent-rule"></div>
+      <div class="topics">
+        <span class="pill"><span class="label">Your Wins</span><span class="label-zh">你的成就</span></span>
+        <span class="pill"><span class="label">Transferable Skills</span><span class="label-zh">可迁移技能</span></span>
+        <span class="pill"><span class="label">Culture Fit</span><span class="label-zh">文化适配</span></span>
+        <span class="pill"><span class="label">Hidden Network</span><span class="label-zh">隐藏人脉</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <div class="url">csc-diagnostics.pages.dev</div>
+      <div class="meta" style="text-align:left; margin-top:4px;">Free · No account · Stays on your phone</div>
+    </div>
+  </div>
+  <div class="corner-mark">✓</div>
+</body>
+</html>

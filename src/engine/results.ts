@@ -16,10 +16,11 @@ import type {
 
 const LEVELS: ReadinessLevel[] = ["building", "getting_ready", "ready"];
 
-function renderNarrative(block: Extract<ResultBlock, { kind: "narrative" }>, diag: Diagnosis): string {
+function renderNarrative(block: Extract<ResultBlock, { kind: "narrative" }>, diag: Diagnosis, idx: number): string {
+  const id = `b-narrative-${idx}`;
   return `
-    <section class="section" aria-labelledby="b-${escapeHtml(block.kind)}">
-      <h2 id="b-${escapeHtml(block.kind)}">${escapeHtml(ct(block.headingKey))}</h2>
+    <section class="section" aria-labelledby="${id}">
+      <h2 id="${id}">${escapeHtml(ct(block.headingKey))}</h2>
       <p class="narrative">${escapeHtml(ctf(block.bodyKey, diag.vars))}</p>
     </section>
   `;
@@ -142,34 +143,35 @@ function renderAssetMap(block: Extract<ResultBlock, { kind: "asset-map" }>, diag
   `;
 }
 
-function renderCta(block: Extract<ResultBlock, { kind: "cta" }>): string {
+function renderCta(block: Extract<ResultBlock, { kind: "cta" }>, idx: number): string {
   const body = block.bodyKey ? `<p>${escapeHtml(ct(block.bodyKey))}</p>` : "";
+  const id = `b-cta-${idx}`;
   return `
-    <section class="section" aria-labelledby="b-cta">
-      <h2 id="b-cta">${escapeHtml(ct(block.headingKey))}</h2>
+    <section class="section" aria-labelledby="${id}">
+      <h2 id="${id}">${escapeHtml(ct(block.headingKey))}</h2>
       <div class="next-step-card cta-card">
         ${body}
-        <a class="btn" href="${escapeHtml(block.href)}" target="_blank" rel="noopener">${escapeHtml(ct(block.linkKey))}</a>
+        <a class="btn" href="${escapeHtml(block.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(ct(block.linkKey))}</a>
       </div>
     </section>
   `;
 }
 
-function renderBlock(block: ResultBlock, diag: Diagnosis): string {
+function renderBlock(block: ResultBlock, diag: Diagnosis, idx: number): string {
   switch (block.kind) {
-    case "narrative": return renderNarrative(block, diag);
+    case "narrative": return renderNarrative(block, diag, idx);
     case "list-reflect": return renderListReflect(block, diag);
     case "level-meter": return renderLevelMeter(block, diag);
     case "script-seed": return renderScriptSeed(block, diag);
     case "split-map": return renderSplitMap(block, diag);
     case "asset-map": return renderAssetMap(block, diag);
-    case "cta": return renderCta(block);
+    case "cta": return renderCta(block, idx);
   }
 }
 
 export function renderResults(inst: Instrument, state: InstrumentState, root: HTMLElement): void {
   const diag = inst.score(state, ct);
-  const blocks = inst.result.blocks.map((b) => renderBlock(b, diag)).join("");
+  const blocks = inst.result.blocks.map((b, i) => renderBlock(b, diag, i)).join("");
 
   root.innerHTML = `
     <article class="results" aria-labelledby="r-title">

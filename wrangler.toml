@@ -1,3 +1,4 @@
 name = "csc-diagnostics"
 pages_build_output_dir = "dist"
 compatibility_date = "2025-01-01"
+production_branch = "master"
