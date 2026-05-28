@@ -1,7 +1,7 @@
 {
   "_meta": {
     "lang": "zh-Hans",
-    "draft": true,
+    "draft": false,
     "name": "简体中文"
   },
   "lang": {
@@ -27,14 +27,14 @@
     "card_resume": "继续——第 {current} 步，共 {total} 步"
   },
   "common": {
-    "back_to_hub": "← 全部自我评估",
+    "back_to_hub": "← 返回主页",
     "free": "免费，无需注册——约 5 分钟",
     "private": "只保存在你的手机上，不会发送到服务器",
     "start": "开始 →",
     "resume_with_step": "继续——第 {current} 步，共 {total} 步"
   },
   "survey": {
-    "all_tools": "← 全部自我评估",
+    "all_tools": "← 返回主页",
     "back": "← 返回",
     "next": "下一步 →",
     "finish": "查看我的结果 →",
@@ -45,14 +45,14 @@
     "tile_selected_rank": "{label}，已选第 {rank} 个",
     "pick_one_each": "请回答每一项后再继续。",
     "pick_one": "请选择一项后再继续。",
-    "pick_exact_n": "请正好选择 {n} 项后再继续。",
+    "pick_exact_n": "请刚好选 {n} 项后再继续。",
     "need_min_rows": "请至少填写 {min} 项后再继续。"
   },
   "results": {
     "complete_badge": "完成",
     "take_title": "把结果带走",
     "pdf_button": "下载 PDF",
-    "pdf_helper": "保存或打印这份结果。带去你的 CSC 预约，或分享给家人。",
+    "pdf_helper": "保存或打印这份结果。下次去 CSC 时带上，或者分享给家人。",
     "specialist_note": "把这份结果带给你的 CSC 专员，他们可以帮你规划下一步。",
     "restart_note": "想再试一次？",
     "restart_link": "重新开始 →"
