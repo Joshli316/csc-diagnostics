@@ -4,8 +4,7 @@ import copyZh from "./copy.zh-Hans.json";
 import { score } from "./scoring";
 import norms from "../../data/shared/us-workplace-norms.json";
 
-// TODO(deploy): point at the live Workplace Culture workshop deep link.
-const WORKSHOP_URL = "https://csc-workshops.pages.dev/";
+const WORKSHOP_URL = "https://workplace-culture-workshop.pages.dev/";
 
 export const w10: Instrument = {
   id: "w10",

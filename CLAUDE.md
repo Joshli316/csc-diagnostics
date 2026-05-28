@@ -63,5 +63,4 @@ folder + one line in `registry.ts`.
 - **No backup files** when editing. **No auto-deploy** — wait for explicit "deploy".
 
 ## Follow-ups
-- **`WORKSHOP_URL` placeholders** — all four `instruments/<id>/config.ts` cta links point at the workshops hub (`https://csc-workshops.pages.dev/`). Point each at its live workshop deep link when known.
 - **Chinese copy is draft** (`_meta.draft: true` in `data/locales/zh-Hans.json` and each `copy.zh-Hans.json`) — needs native-speaker review before client use. The draft banner shows in 中文 until then.

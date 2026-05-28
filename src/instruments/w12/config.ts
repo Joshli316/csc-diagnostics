@@ -4,8 +4,7 @@ import copyZh from "./copy.zh-Hans.json";
 import { score } from "./scoring";
 import { CATEGORIES } from "./categories";
 
-// TODO(deploy): point at the live Networking workshop deep link.
-const WORKSHOP_URL = "https://csc-workshops.pages.dev/";
+const WORKSHOP_URL = "https://networking-workshop.pages.dev/";
 
 const categoryRepeaters: RepeaterQuestion[] = CATEGORIES.map((cat) => ({
   kind: "repeater",

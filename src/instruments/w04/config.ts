@@ -4,8 +4,7 @@ import copyZh from "./copy.zh-Hans.json";
 import { score } from "./scoring";
 import skills from "../../data/shared/transferable-skills.json";
 
-// TODO(deploy): point at the live Interview Skills workshop deep link.
-const WORKSHOP_URL = "https://csc-workshops.pages.dev/";
+const WORKSHOP_URL = "https://interview-skills-workshop.pages.dev/";
 
 export const w04: Instrument = {
   id: "w04",

@@ -3,9 +3,7 @@ import copyEn from "./copy.en.json";
 import copyZh from "./copy.zh-Hans.json";
 import { score } from "./scoring";
 
-// TODO(deploy): point at the live Career Growth workshop deep link once known.
-// Defaults to the workshops hub so the back-link is never dead.
-const WORKSHOP_URL = "https://csc-workshops.pages.dev/";
+const WORKSHOP_URL = "https://career-growth-workshop.pages.dev/";
 
 export const w15: Instrument = {
   id: "w15",
