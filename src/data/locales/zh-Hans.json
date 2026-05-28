@@ -10,7 +10,9 @@
     "aria_label": "语言"
   },
   "header": {
-    "brand": "CSC 自我评估"
+    "brand": "CSC 自我评估",
+    "upstream_label": "← CSC 工作坊",
+    "upstream_aria": "返回 CSC 工作坊主页"
   },
   "page_title": {
     "hub": "CSC 工作坊自我评估",

@@ -31,7 +31,10 @@ function renderHeader(): void {
   const lang = getLang();
   header.innerHTML = `
     <div class="inner">
-      <a class="brand" href="#/" data-action="home">${escapeHtml(t("header.brand"))}</a>
+      <div class="brand-stack">
+        <a class="upstream-link" href="https://csc-workshops.pages.dev/" aria-label="${escapeHtml(t("header.upstream_aria"))}">${escapeHtml(t("header.upstream_label"))}</a>
+        <a class="brand" href="#/" data-action="home">${escapeHtml(t("header.brand"))}</a>
+      </div>
       <div class="lang-toggle" role="group" aria-label="${escapeHtml(t("lang.aria_label"))}">
         <button type="button" data-lang="en" aria-pressed="${lang === "en"}">${escapeHtml(t("lang.en"))}</button>
         <button type="button" data-lang="zh-Hans" aria-pressed="${lang === "zh-Hans"}">${escapeHtml(t("lang.zh"))}</button>

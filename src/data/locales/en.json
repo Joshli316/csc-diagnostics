@@ -10,7 +10,9 @@
     "aria_label": "Language"
   },
   "header": {
-    "brand": "CSC Self-Checks"
+    "brand": "CSC Self-Checks",
+    "upstream_label": "← CSC Workshops",
+    "upstream_aria": "Back to CSC Workshops hub"
   },
   "page_title": {
     "hub": "CSC Workshop Self-Checks",
