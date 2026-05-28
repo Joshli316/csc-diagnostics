@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Hash routes (#/w15/, #/w04/, …) are NOT independently crawlable, so we list
+  only the canonical root. The SPA hub at / surfaces all four self-checks.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://csc-diagnostics.pages.dev/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
